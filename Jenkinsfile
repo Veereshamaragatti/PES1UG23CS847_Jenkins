@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                echo "Compiling PES1UG22CS713.cpp"
-                g++ PES1UG22CS700.cpp -o PES1UG22CS713
+                echo "Compiling PES1UG23CS847.cpp"
+                g++ PES1UG23CS847.cpp -o PES1UG23CS847
                 '''
             }
         }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh '''
                 echo "Running the compiled program"
-                ./PES1UG22CS713
+                ./PES1UG23CS847
                 '''
             }
         }
